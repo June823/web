@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VINTAGE FIBRES</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+ <header>
+         <img src="logo.png" class="logo">
+         <div class="logo-name">VINTAGE FIBRES</div>
+        <nav>
+           
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product and services.html">Product and Services</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>     
+            </ul>
+               
+        </nav>
+    </header>
+   
+<div class="container">
+   <div class="info-section">
+            <h1>Welcome to vintage fibres</h1>
+            <p>Discover the latest in technology, tutorials, and more.</p>
+        </div>
+
+  <div class="mission-section">
+            <h2>Mission & Vision</h2>
+            <p>this is the mission section</p>
+            <p>Learn more about our mission on ....</p>
+        </div>
+   
+       <div class="footer-section">
+       <div class="column">
+        <p>&copy;<b>Vintage Fibres. </b></p>
+        </div>
+        <div class="column">
+        <p><b>menu;</b><br> Home<br> About Us<br>Product and services<br>Mission<br>Team<br>Contact Us</p>
+        </div>
+        <div class="column">
+        <p><b>contact;</b><br> RODGERS OYUGI - +254707082087<br> oyugirodgers.or@outlook.com</p>
+       </div>
+
+    </footer> 
+   </div>
+
+    <script>
+       function showSection(sectionId) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        if (section.id === sectionId) {
+            section.classList.remove('hidden');
+            section.classList.add('zoom');
+        } else {
+            section.classList.add('hidden');
+            section.classList.remove('zoom');
+        }
+    });
+  } 
+</script>
+</body>
+</html>

@@ -1,67 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>VINTAGE FIBRES</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
- <header>
-        <nav>
-            <img src="logo.png" alt="VINTAGE FIBRES" class="logo">
-            <ul>
-                <li><a href="dashboard.html">VINTAGE FIBRES</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="product and services.html">Product and Services</a></li>
-                <li><a href="mission.html">Mission</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact Us</a></li>     
-            </ul>         
-        </nav>
-    </header>
-   
-<div class="container">
-   <div class="info-section">
-            <h1>Welcome to vintage fibres</h1>
-            <p>Discover the latest in technology, tutorials, and more.</p>
-        </div>
-
-  <div class="mission-section">
-            <h2>Mission & Vision</h2>
-            <p>this is the mission section</p>
-            <p>Learn more about our mission on ....</p>
-        </div>
-   
-       <div class="footer-section">
-       <div class="column">
-        <p>&copy;<b>Vintage Fibres. </b></p>
-        </div>
-        <div class="column">
-        <p><b>menu;</b><br> Home<br> About Us<br>Product and services<br>Mission<br>Team<br>Contact Us</p>
-        </div>
-        <div class="column">
-        <p><b>contact;</b><br> RODGERS OYUGI - +254707082087<br> oyugirodgers.or@outlook.com</p>
-       </div>
-
-    </footer> 
-   </div>
-
-    <script>
-       function showSection(sectionId) {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        if (section.id === sectionId) {
-            section.classList.remove('hidden');
-            section.classList.add('zoom');
-        } else {
-            section.classList.add('hidden');
-            section.classList.remove('zoom');
-        }
-    });
-  } 
-</script>
-</body>
-</html>
 <style>
 
 * {
@@ -83,14 +19,12 @@ body {
 
 header {
 
+    text-align: center; /* Centers the content inside the header */
+    margin-bottom: 20px;
     color: blue;
-    padding: 2em 4;
-    display: large;
-    align-items: center;
-    justify-content: space-between;
 } 
 .info-section {
-    background: url('C:/Users/HP/OneDrive/Documents/ida2.jpg') repeat;
+   background: url("ida10.jpg") repeat;
     background-attachment: fixed;
     background-size: cover;
     animation: moveBackground 20s linear infinite;
@@ -100,7 +34,7 @@ header {
     text-align: center;
     width: 1500px;
     height: 500px;
-    color: green;
+    color: black;
                }
 .info-section p  {
      color: white;
@@ -145,13 +79,19 @@ header {
 
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+   list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: inline-block;
 }
 
 nav ul li {
-    margin: 0 2em;
+    list-style: none; /* Removes bullet points */
+    padding: 0 2em;
+    justify-content: center; /* Centers the navigation list */
+    gap: 20px; 
+    display: inline; /* Ensures links are in one row */
+    margin: 0 15px; 
 }
 
 nav ul li a {
@@ -161,10 +101,20 @@ nav ul li a {
 }
 
 .logo {
-  max-width:100000px; /* Adjust this value to your desired size */
-  max-height:auto;  /* Maintain aspect ratio */
+  max-width: 300px; /* Adjust this value to your desired size */
+  max-height: auto;  /* Maintain aspect ratio */
   font-family: castellar;
   color: green;
+   display: block; /* Ensures the logo is on its own line */
+    margin: 0 auto; /* Centers the logo */
+    
+   }
+.logo-name {
+    font-size: 2em; /* Increases the text size (e.g., 2x default size) */
+    font-family: Castellar, serif; /* Applies your desired font */
+    color: green; /* Makes the text green */
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adds space between the logo and text */
 }
 
 main {
@@ -211,7 +161,7 @@ footer {
  .footer-section p {
             color: yellow;
             line-height: 1.6;
-            height: 100px;
+            height: 20px;
         }
   .footer-section {
             background: green;
